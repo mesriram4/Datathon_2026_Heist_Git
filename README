@@ -1,0 +1,80 @@
+* R² Score: approximately 0.34
+
+  * The model explains about 34% of the variance in gas prices
+
+---
+
+## Key Insights
+
+* There is a weak relationship between gas prices and:
+
+  * Income
+  * Zip code and location within Los Angeles County
+
+* This aligns with exploratory analysis (heatmap), which showed low correlation between these variables and gas prices
+
+---
+
+## Limitations
+
+* Small dataset (131 rows), increasing the risk of overfitting
+* Limited feature set does not include major drivers such as:
+
+  * Crude oil prices
+  * Supply chain dynamics
+  * State and local gas taxes
+  * Time-based trends
+
+---
+
+## Future Improvements
+
+To improve model performance, future work should include:
+
+* Incorporating external economic indicators such as oil prices and inflation
+* Including regional policy data (taxes and regulations)
+* Expanding dataset size beyond Los Angeles County
+* using an api to display real-time data
+
+
+---
+
+## Conclusion
+
+This project demonstrates that income and local demographic factors alone are not strong predictors of gas prices. Instead, gas prices are likely driven by broader macroeconomic and supply-side factors not captured in this dataset.
+
+---
+
+## Tech Stack
+
+* Python
+* Pandas
+* Scikit-learn
+* XGBoost
+
+---
+
+## How to Run
+
+1. Install dependencies:
+
+   ```bash
+   pip install pandas scikit-learn xgboost 
+   ```
+
+2. Run the script:
+
+   ```bash
+   python model.py
+   ```
+
+---
+
+## Author
+
+Meera Sriram
+Gracy Sutaria
+Hanin Barakat
+Charan Sandha
+
+---
